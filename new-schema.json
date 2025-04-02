@@ -1,0 +1,1142 @@
+[
+  {
+    "category": "Politicians/candidates and political campaigns",
+    "category_name": "politicians_campaigns",
+    "category_number": "1",
+    "policies": [],
+    "targets": [],
+    "tags": {
+      "positive": [
+        "moral",
+        "competent",
+        "not beholden to special interests",
+        "fiscally prudent",
+        "patriotic"
+      ],
+      "negative": [
+        "immoral",
+        "incompetent",
+        "beholden to special interests",
+        "fiscally wasteful",
+        "out of touch",
+        "unpatriotic"
+      ],
+      "partisan": [
+        "conservative/anti-liberal",
+        "liberal/progressive/anti-conservative",
+        "nonpartisan/bipartisan"
+      ]
+    },
+    "children": [
+      {
+        "category": "Politician/candidate campaign activities/polling/horserace coverage",
+        "category_name": "horserace",
+        "category_number": "1.1",
+        "policies": [],
+        "targets": [],
+        "children": [],
+        "mediaspecific": 1
+      },
+      {
+        "category": "Politician/candidate competence/endorsements/constituent service",
+        "category_name": "politician_competence",
+        "category_number": "1.2",
+        "policies": [],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Economic policy and economic conditions",
+    "category_name": "economic_policy_and_economic_conditions",
+    "category_number": "2",
+    "policies": [],
+    "targets": [
+      "rural communities",
+      "wealthy Americans",
+      "middle-class Americans",
+      "poor Americans",
+      "consumers"
+    ],
+    "children": [
+      {
+        "category": "Taxes",
+        "category_name": "taxes",
+        "category_number": "2.1",
+        "policies": [
+          "Do you generally support increasing taxes?",
+          "Do you support increasing taxes on alcohol?",
+          "Do you support increasing taxes on capital gains?",
+          "Do you support increasing sales taxes?",
+          "Do you support increasing taxes on tobacco?",
+          "Do you support increasing estate/inheritance taxes?",
+          "Do you support increasing taxes on gasoline?",
+          "Do you support increasing taxes on low-income families?",
+          "Do you support increasing taxes on middle-income families?",
+          "Do you support increasing taxes on wealthy families?",
+          "Do you support a wealth tax?",
+          "Do you support increasing taxes on the Internet?",
+          "Do you support eliminating the IRS?"
+        ],
+        "targets": [],
+        "children": [
+          {
+            "category": "Taxes on businesses",
+            "category_name": "taxes_on_businesses",
+            "category_number": "2.1.1",
+            "policies": [
+              "Do you support increasing taxes on corporations?",
+              "Do you support increasing taxes on oil companies?",
+              "Do you support increasing taxes on small businesses?",
+              "Do you support increasing taxes on banks/Wall Street?"
+            ],
+            "targets": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "category": "Trade policy",
+        "category_name": "trade_policy",
+        "category_number": "2.2",
+        "policies": [
+          "Do you support increasing tariffs, quotas, or other trade protections?",
+          "Do you support government policies to discourage American companies from replacing US workers with foreign workers?",
+          "Do you support the North American Free Trade Agreement (NAFTA)?",
+          "Do you support policies to onshore high-tech manufacturing, e.g. of semiconductors?"
+        ],
+        "targets": [
+          "China"
+        ],
+        "children": []
+      },
+      {
+        "category": "Prices",
+        "category_name": "prices",
+        "category_number": "2.3",
+        "policies": [
+          "Do you support increasing sales taxes?"
+        ],
+        "targets": [],
+        "children": [
+          {
+            "category": "Housing prices",
+            "category_name": "housing_prices",
+            "category_number": "2.3.1",
+            "policies": [
+              "Do you support increasing property taxes?",
+              "Do you support increasing funding for affordable housing programs?",
+              "Do you support increasing regulation on housing developers?",
+              "Do you support increasing the home mortgage interest deduction?"
+            ],
+            "targets": [
+              "homeowners"
+            ],
+            "children": []
+          },
+          {
+            "category": "Food prices",
+            "category_name": "food_prices",
+            "category_number": "2.3.2",
+            "policies": [],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "Energy and gas prices",
+            "category_name": "energy_and_gas_prices",
+            "category_number": "2.3.3",
+            "policies": [
+              "Do you support increasing taxes on gasoline?"
+            ],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "Inflation",
+            "category_name": "inflation",
+            "category_number": "2.3.4",
+            "policies": [],
+            "targets": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "category": "Energy policy/environment/climate",
+        "category_name": "energy_policy_environment_climate",
+        "category_number": "2.4",
+        "policies": [
+          "Do you support funding for alternative fuels and green energy?",
+          "Do you support increased development of traditional energy resources like coal, natural gas, and oil?",
+          "Do you support expanding offshore oil and gas drilling?",
+          "Do you support a cap and trade system for pollution?",
+          "Do you support the development of nuclear energy?",
+          "Do you support increasing regulation of fracking?",
+          "Do you support increasing enforcement of environmental regulations?",
+          "Do you support increasing taxes on gasoline?"
+        ],
+        "targets": [
+          "oil companies",
+          "coal miners",
+          "oil workers",
+          "coal companies",
+          "polluters"
+        ],
+        "children": []
+      },
+      {
+        "category": "Economic inequality and poverty",
+        "category_name": "economic_inequality_and_poverty",
+        "category_number": "2.5",
+        "policies": [
+          "Do you support increased funding for affordable housing programs?",
+          "Do you support abolishing all federal welfare programs?",
+          "Do you support greater limits on welfare benefits?",
+          "Do you support increasing government funding for welfare?",
+          "Do you support any work requirements for welfare?",
+          "Do you support increasing funding for programs for at-risk youth?",
+          "Do you support increasing taxes on low-income families?",
+          "Do you support increasing taxes on middle-income families?",
+          "Do you support increasing taxes on wealthy families?",
+          "Do you support a wealth tax?",
+          "Do you support a tax on capital gains?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Employment/labor/wages/unions",
+        "category_name": "employment_labor_wages_unions",
+        "category_number": "2.6",
+        "policies": [
+          "Do you support providing tax credits for companies to create jobs?",
+          "Do you support increasing funding for vocational training and other programs designed to reduce unemployment?",
+          "Do you support workers' right to unionize?",
+          "Do you support workers' right to vote on unionization in private?",
+          "Do you support more stringent workplace safety regulations?",
+          "Do you support increasing the minimum wage?",
+          "Do you support expanding paid family or medical leave benefits?",
+          "Do you support government policies to discourage American companies from replacing US workers with foreign workers?"
+        ],
+        "targets": [
+          "jobs",
+          "unions"
+        ],
+        "children": []
+      },
+      {
+        "category": "Economic forecasts and economic conditions",
+        "category_name": "economic_forecasts_and_economic_conditions",
+        "category_number": "2.7",
+        "policies": [],
+        "targets": [
+          "businesses",
+          "small businesses",
+          "corporations",
+          "Internet corporations"
+        ],
+        "children": []
+      },
+      {
+        "category": "Regulation/misconduct of business",
+        "category_name": "regulation_misconduct_of_business",
+        "category_number": "2.8",
+        "policies": [
+          "Do you generally support increasing government regulation of the private sector?",
+          "Do you support increasing regulation on insurance companies?",
+          "Do you support increasing protections for people with pre-existing conditions, e.g. by requiring insurance companies to charge them the same premiums as everyone else?",
+          "Do you support increasing regulation on financial institutions/Wall Street?",
+          "Do you support increasing regulation on pharmaceutical companies?",
+          "Do you support increasing regulation on oil companies?",
+          "Do you support expanding offshore oil and gas drilling?",
+          "Do you support more stringent workplace safety regulations?",
+          "Do you support increasing enforcement of environmental regulations?",
+          "Do you support increasing regulations on how companies can use and store user data?",
+          "Do you support a cap and trade system for pollution?",
+          "Do you support increasing regulation of fracking?",
+          "Do you support increasing regulation on housing developers?",
+          "Do you support bailing out struggling financial institutions?",
+          "Do you support increasing regulation on utility companies?"
+        ],
+        "targets": [
+          "insurance companies",
+          "financial institutions",
+          "housing developers",
+          "oil companies",
+          "coal miners",
+          "oil workers",
+          "coal companies",
+          "pharmaceutical companies",
+          "utility companies",
+          "polluters"
+        ],
+        "children": []
+      },
+      {
+        "category": "Deficit/surplus/budget/debt",
+        "category_name": "deficit_surplus_budget_debt",
+        "category_number": "2.9",
+        "policies": [
+          "Do you support prioritizing paying off government debt?",
+          "Do you support a balanced budget amendment?",
+          "Do you generally support decreasing government spending?",
+          "Do you support bailing out struggling financial institutions?",
+          "Do you support stimulus spending to bolster economic growth?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Farms/agriculture/fishing",
+        "category_name": "farms_agriculture_fishing",
+        "category_number": "2.10",
+        "policies": [
+          "Do you support increasing funding and support for farms/agriculture/fishing?"
+        ],
+        "targets": [
+          "fishers",
+          "farmers"
+        ],
+        "children": []
+      },
+      {
+        "category": "Manufacturing",
+        "category_name": "manufacturing",
+        "category_number": "2.11",
+        "policies": [
+          "Do you support increasing tariffs, quotas, or other trade protections?",
+          "Do you support government policies to discourage American companies from replacing US workers with foreign workers?",
+          "Do you support policies to onshore high-tech manufacturing, e.g. of semiconductors?"
+        ],
+        "targets": [
+          "manufacturing jobs",
+          "steelworkers"
+        ],
+        "children": []
+      },
+      {
+        "category": "Transportation/infrastructure/utilities",
+        "category_name": "transportation_infrastructure_utilities",
+        "category_number": "2.12",
+        "policies": [
+          "Do you support increasing funding for transportation infrastructure?",
+          "Do you support increasing regulation on utility companies?",
+          "Do you support increasing funding for the United States Postal Service?"
+        ],
+        "targets": [
+          "utility companies",
+          "postal workers"
+        ],
+        "children": []
+      },
+      {
+        "category": "Stock market conditions",
+        "category_name": "stock_market_conditions",
+        "category_number": "2.13",
+        "policies": [],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Entitlements/healthcare/welfare/social safety net",
+    "category_name": "entitlements_healthcare_welfare_social_safety_net",
+    "category_number": "3",
+    "policies": [
+      "Do you support greater limits on welfare benefits?",
+      "Do you support increasing government funding for welfare?",
+      "Do you support any work requirements for welfare?"
+    ],
+    "targets": [
+      "people with disabilities",
+      "poor Americans"
+    ],
+    "children": [
+      {
+        "category": "Healthcare",
+        "category_name": "healthcare",
+        "category_number": "3.1",
+        "policies": [
+          "Do you support increasing government funding for healthcare?",
+          "Do you support increasing government funding for mental health care?",
+          "Do you support legislation that defines and enforces the rights of insured patients?",
+          "Do you support increasing regulation on pharmaceutical companies?",
+          "Do you support increasing regulation on insurance companies?",
+          "Do you support implementing a universal health care program to guarantee coverage to all Americans?",
+          "Do you support increasing federal funding for AIDS/HIV programs?",
+          "Do you support increasing funding for employer-provided healthcare plans?",
+          "Do you support requiring individuals to purchase health insurance?",
+          "Do you support increasing funding for child healthcare programs?",
+          "Do you support increasing protections for people with pre-existing conditions, e.g. by requiring insurance companies to charge them the same premiums as everyone else?",
+          "Do you support increasing funding for rural hospitals?",
+          "Do you support increasing funding for Medicaid?",
+          "Do you support the Affordable Care Act?",
+          "Do you support increasing funding for the VA and for veterans' healthcare?",
+          "Do you support greater privatization of veterans' healthcare?",
+          "Do you support expanding funding for drug education and drug treatment?",
+          "Do you support an individual's right to choose euthanasia?"
+        ],
+        "targets": [
+          "insurance companies",
+          "pregnant women",
+          "pharmaceutical companies",
+          "first responders"
+        ],
+        "children": [
+          {
+            "category": "Opioid crisis",
+            "category_name": "opioid_crisis",
+            "category_number": "3.1.1",
+            "policies": [],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "Epidemics/disease/vaccines",
+            "category_name": "epidemics_disease_vaccines",
+            "category_number": "3.1.2",
+            "policies": [
+              "Do you generally support shutting down parts of the economy to prevent the spread of disease?",
+              "Do you support any vaccine mandates?"
+            ],
+            "targets": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "category": "Housing/homelessness",
+        "category_name": "housing_homelessness",
+        "category_number": "3.2",
+        "policies": [
+          "Do you support increasing funding for affordable housing programs?",
+          "Do you support increasing regulation on housing developers?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Childcare",
+        "category_name": "childcare",
+        "category_number": "3.3",
+        "policies": [
+          "Do you support increasing funding and tax credits for child care?",
+          "Do you support expanding paid family or medical leave benefits?",
+          "Do you support increasing financial support for families with children with disabilities?",
+          "Do you support increasing funding for preschool programs?"
+        ],
+        "targets": [
+          "children"
+        ],
+        "children": []
+      },
+      {
+        "category": "Veterans",
+        "category_name": "veterans",
+        "category_number": "3.4",
+        "policies": [
+          "Do you support increasing funding for the VA and for veterans' healthcare?",
+          "Do you support greater privatization of veterans' healthcare?"
+        ],
+        "targets": [
+          "veterans"
+        ],
+        "children": []
+      },
+      {
+        "category": "Senior issues",
+        "category_name": "senior_issues",
+        "category_number": "3.5",
+        "policies": [
+          "Do you support increasing regulations and/or enforcement of regulations on nursing homes?",
+          "Do you support increasing funding and tax credits for elderly care?"
+        ],
+        "targets": [
+          "seniors"
+        ],
+        "children": [
+          {
+            "category": "Social Security",
+            "category_name": "social_security",
+            "category_number": "3.5.1",
+            "policies": [
+              "Do you support increasing funding for, or protecting funds for, Social Security?",
+              "Do you support increasing the retirement age for Social Security eligibility?",
+              "Do you support privatizing Social Security?"
+            ],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "Medicare",
+            "category_name": "medicare",
+            "category_number": "3.5.2",
+            "policies": [
+              "Do you support increasing funding for Medicare?",
+              "Do you support turning Medicare into a privatized (voucherized) program?",
+              "Do you support increasing funding for prescription drug coverage under Medicare?",
+              "Do you support allowing Medicare to negotiate lower drug prices?"
+            ],
+            "targets": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "category": "Unemployment and disability insurance",
+        "category_name": "unemployment_and_disability_insurance",
+        "category_number": "3.6",
+        "policies": [],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Education",
+    "category_name": "education",
+    "category_number": "4",
+    "policies": [
+      "Do you support increasing funding for vocational training and other programs designed to reduce unemployment?"
+    ],
+    "targets": [],
+    "children": [
+      {
+        "category": "Primary and secondary education",
+        "category_name": "primary_and_secondary_education",
+        "category_number": "4.1",
+        "policies": [
+          "Do you support increasing funding for education?",
+          "Do you support national standards and testing of public school students?",
+          "Do you support merit pay for teachers?",
+          "Do you support allowing parents to use vouchers to send their children to any school?",
+          "Do you support government funding for charter schools?"
+        ],
+        "targets": [
+          "students",
+          "teachers"
+        ],
+        "children": [
+          {
+            "category": "Religious and moral education in public schools",
+            "category_name": "religious_and_moral_education_in_public_schools",
+            "category_number": "4.1.1",
+            "policies": [
+              "Do you support voluntary prayer in public schools?",
+              "Do you support displaying the Ten Commandments in public schools?",
+              "Do you support abstinence-only sex education programs?"
+            ],
+            "targets": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "category": "Universities",
+        "category_name": "universities",
+        "category_number": "4.2",
+        "policies": [
+          "Do you support increasing funding for programs to help students pay for college?",
+          "Do you support increased funding for public universities?"
+        ],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Government functioning",
+    "category_name": "government_functioning",
+    "category_number": "5",
+    "policies": [],
+    "targets": [],
+    "children": [
+      {
+        "category": "Judicial system/Supreme Court",
+        "category_name": "judicial_system_supreme_court",
+        "category_number": "5.1",
+        "policies": [
+          "Do you generally support legal reforms limiting payouts to plaintiffs in lawsuits?"
+        ],
+        "targets": [
+          "lawyers"
+        ],
+        "children": []
+      },
+      {
+        "category": "Congressional bills/debate/negotiation/votes/appointments",
+        "category_name": "congress",
+        "category_number": "5.2",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Government reform and investigation of wrongdoing by elected officials",
+        "category_name": "government_reform_investigation",
+        "category_number": "5.3",
+        "policies": [
+          "Do you support increasing regulation on campaign contributions from corporations, unions, PACs, and/or individuals?",
+          "Do you support congressional term limits?",
+          "Do you support greater ethical standards for elected officials?",
+          "Do you support allowing the line item veto?",
+          "Do you support eliminating the IRS?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Election administration and security",
+        "category_name": "election_administration_and_security",
+        "category_number": "5.4",
+        "policies": [
+          "Do you support online voter registration and/or online voting?",
+          "Do you support instant run-off voting?",
+          "Do you support requiring government-issued IDs to vote at the polls?",
+          "Do you generally support laws making it easier to vote?"
+        ],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Crime and safety",
+    "category_name": "crime_and_safety",
+    "category_number": "6",
+    "policies": [
+      "Do you support increasing funding for programs for at-risk youth?",
+      "Do you support increasing government involvement to address sexual assault and harassment?"
+    ],
+    "targets": [],
+    "children": [
+      {
+        "category": "Criminal sentencing",
+        "category_name": "criminal_sentencing",
+        "category_number": "6.1",
+        "policies": [
+          "Do you support broadening the use of the death penalty?",
+          "Do you support increasing funding for prisons?",
+          "Do you support increasing penalties for white-collar criminals?",
+          "Do you support limiting parole for criminals?",
+          "Do you support increasing penalties for violent criminals?",
+          "Do you support increasing penalties for selling illegal drugs?",
+          "Do you support vocational training and job placement for prison inmates?",
+          "Do you support prosecuting minors accused of a violent crime as adults?",
+          "Do you support reducing prison sentences for individuals who commit non-violent crimes?",
+          "Do you support mandatory minimum sentences for nonviolent drug offenders?",
+          "Do you support making the sex offender registry public?",
+          "Do you support collecting DNA samples from all convicted criminals?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Terrorism",
+        "category_name": "terrorism",
+        "category_number": "6.2",
+        "policies": [
+          "Do you support granting law enforcement agencies greater discretion to read mail and email, tap phones, and conduct random searches to prevent future terrorist attacks?",
+          "Do you support increasing federal funding for homeland security?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Guns",
+        "category_name": "guns",
+        "category_number": "6.3",
+        "policies": [
+          "Do you support banning the sale of semi-automatic guns, except those used for hunting?",
+          "Do you support increasing restrictions on the purchase and possession of guns?",
+          "Do you support requiring background checks on gun sales between private citizens at gun shows?",
+          "Do you support banning sale or possession of guns except by law enforcement and government officials?",
+          "Do you support concealed carry rights?"
+        ],
+        "targets": [
+          "gun owners"
+        ],
+        "children": []
+      },
+      {
+        "category": "Gangs and organized crime",
+        "category_name": "gangs_and_organized_crime",
+        "category_number": "6.4",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Illegal drugs",
+        "category_name": "illegal_drugs",
+        "category_number": "6.5",
+        "policies": [
+          "Do you support mandatory minimum sentences for nonviolent drug offenders?",
+          "Do you support increasing penalties for selling illegal drugs?",
+          "Do you support expanding funding for drug education and drug treatment?",
+          "Do you support increasing border security to stop the flow of illegal drugs into the US?",
+          "Do you support eliminating federal funding for programs associated with the war on drugs?",
+          "Do you support decriminalization of marijuana for medical use?",
+          "Do you support decriminalization of marijuana for recreational use?"
+        ],
+        "targets": [
+          "drug addicts"
+        ],
+        "children": []
+      },
+      {
+        "category": "Policing",
+        "category_name": "policing",
+        "category_number": "6.6",
+        "policies": [
+          "Do you support increasing funding for law enforcement?",
+          "Do you support increasing funding for community policing programs?",
+          "Do you support efforts to reduce racial disparities in policing?"
+        ],
+        "targets": [
+          "police officers"
+        ],
+        "children": []
+      },
+      {
+        "category": "Riots and protests",
+        "category_name": "riots_and_protests",
+        "category_number": "6.7",
+        "policies": [
+          "Do you support increasing penalties for rioters and protesters?"
+        ],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Social issues and women and minority issues",
+    "category_name": "social_issues_and_women_and_minority_issues",
+    "category_number": "7",
+    "policies": [],
+    "targets": [
+      "minorities"
+    ],
+    "children": [
+      {
+        "category": "Women's rights",
+        "category_name": "women_s_rights",
+        "category_number": "7.1",
+        "policies": [
+          "Do you support increasing government efforts to close gender gaps, for example, affirmative action?",
+          "Do you support laws requiring individuals to use a bathroom corresponding with the gender listed on their birth certificate?",
+          "Do you support allowing transgender individuals to participate in sports under their gender identity?"
+        ],
+        "targets": [
+          "women"
+        ],
+        "children": [
+          {
+            "category": "Sexual harassment/abuse/assault/domestic violence",
+            "category_name": "sexual_harassment_abuse_assault_domestic_violence",
+            "category_number": "7.1.1",
+            "policies": [
+              "Do you support increasing government involvement to address sexual assault and harassment?",
+              "Do you support making the sex offender registry public?"
+            ],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "Equal pay/rights/representation in workforce",
+            "category_name": "equal_pay_rights_representation_in_workforce",
+            "category_number": "7.1.2",
+            "policies": [
+              "Do you support increasing government efforts to close gender gaps, for example, affirmative action?"
+            ],
+            "targets": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "category": "Abortion/contraception/birth control",
+        "category_name": "abortion_contraception_birth_control",
+        "category_number": "7.2",
+        "policies": [
+          "Do you support pro-choice legislation?",
+          "Do you support making abortions illegal at all times?",
+          "Do you support making abortions legal at all times?",
+          "Do you support limiting abortions with waiting periods and parental notification requirements?",
+          "Do you support prohibiting public funding for abortion procedures?",
+          "Do you support abstinence-only sex education programs?",
+          "Do you support government funding for organizations that provide abortions, such as Planned Parenthood?",
+          "Do you support allowing religious exceptions to laws requiring provision of contraception/abortion?"
+        ],
+        "targets": [
+          "Planned Parenthood",
+          "pregnant women"
+        ],
+        "children": []
+      },
+      {
+        "category": "Racial equity/race relations/civil rights/racism",
+        "category_name": "race",
+        "category_number": "7.3",
+        "policies": [
+          "Do you support efforts to reduce racial disparities in policing?",
+          "Do you support increasing government efforts to close racial economic gaps, for example, affirmative action?"
+        ],
+        "targets": [
+          "minorities",
+          "blacks"
+        ],
+        "children": []
+      },
+      {
+        "category": "LGBTQ rights/policies",
+        "category_name": "lgbtq_rights_policies",
+        "category_number": "7.4",
+        "policies": [
+          "Do you support restricting marriage to a union only between a man and a woman?",
+          "Do you support same-sex couples being allowed to form civil unions?",
+          "Do you support laws requiring individuals to use a bathroom corresponding with the gender listed on their birth certificate?",
+          "Do you support allowing transgender individuals to participate in sports under their gender identity?",
+          "Do you support the right of same-sex couples to adopt children?",
+          "Do you support allowing gay people to serve openly in the military?"
+        ],
+        "targets": [
+          "gays"
+        ],
+        "children": []
+      },
+      {
+        "category": "Religion/faith",
+        "category_name": "religion_faith",
+        "category_number": "7.5",
+        "policies": [
+          "Do you support stem cell research?",
+          "Do you support an individual's right to choose euthanasia?",
+          "Do you support voluntary prayer in public schools?",
+          "Do you support displaying the Ten Commandments in public schools?",
+          "Do you support allowing religious exceptions to laws requiring provision of contraception/abortion?",
+          "Do you support restricting marriage to a union only between a man and a woman?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Freedom of speech/political correctness/cancel culture",
+        "category_name": "political_correctness",
+        "category_number": "7.6",
+        "policies": [
+          "Do you support more stringent government regulations on Internet activity and content?",
+          "Do you support increasing penalties for flag burning and/or the defamation of monuments?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Gambling/tobacco/alcohol",
+        "category_name": "gambling_tobacco_alcohol",
+        "category_number": "7.7",
+        "policies": [
+          "Do you support expanding legalized gambling?",
+          "Do you support increasing taxes on tobacco?",
+          "Do you support increasing taxes on alcohol?"
+        ],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Immigration to the US/immigrants in the US",
+    "category_name": "immigration",
+    "category_number": "8",
+    "policies": [
+      "Do you support decreasing the number of immigrants allowed into the country?",
+      "Do you support increasing the eligibility of legal immigrants for social programs?",
+      "Do you support increasing the eligibility of illegal immigrants for social programs?",
+      "Do you support birthright citizenship?",
+      "Do you support allowing a temporary worker program that would allow illegal immigrants to work in the US legally?",
+      "Do you support amnesty for at least some illegal immigrants already in the US?",
+      "Do you support a pathway to citizenship for illegal immigrants?",
+      "Do you support policies that would make it more difficult for illegal immigrants to work?"
+    ],
+    "targets": [
+      "immigrants",
+      "illegal immigrants"
+    ],
+    "children": [
+      {
+        "category": "Border security/border conditions/illegal immigration",
+        "category_name": "illegal_immigration",
+        "category_number": "8.1",
+        "policies": [
+          "Do you support increasing border security to stop the flow of illegal drugs into the US?",
+          "Do you support increasing security along the southern US border?",
+          "Do you support improving conditions for immigrants in detention centers?",
+          "Do you support increasing deportation of illegal immigrants?",
+          "Do you support withholding federal funding from sanctuary cities?"
+        ],
+        "targets": [
+          "illegal immigrants"
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Science and technology",
+    "category_name": "science_and_technology",
+    "category_number": "9",
+    "policies": [
+      "Do you support increasing funding for scientific and medical research?",
+      "Do you support stem cell research?",
+      "Do you support the development of nuclear energy?",
+      "Do you support funding for alternative fuels and green energy?"
+    ],
+    "targets": [],
+    "children": []
+  },
+  {
+    "category": "Military and national security",
+    "category_name": "military_and_national_security",
+    "category_number": "10",
+    "policies": [
+      "Do you support using pre-emptive military strikes against countries considered a threat to US national security?"
+    ],
+    "targets": [
+      "troops"
+    ],
+    "children": [
+      {
+        "category": "Foreign relations with/policy toward China",
+        "category_name": "china",
+        "category_number": "10.1",
+        "policies": [
+          "Do you support policies to onshore high-tech manufacturing, e.g. of semiconductors?"
+        ],
+        "targets": [
+          "China"
+        ],
+        "children": []
+      },
+      {
+        "category": "Foreign relations with/policy toward Middle East",
+        "category_name": "middle_east",
+        "category_number": "10.2",
+        "policies": [
+          "Do you support the war in Iraq?",
+          "Do you support increasing American military involvement in the Middle East?",
+          "Do you support a nuclear deal with Iran?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Government surveillance",
+        "category_name": "government_surveillance",
+        "category_number": "10.3",
+        "policies": [
+          "Do you support granting law enforcement agencies greater discretion to read mail and email, tap phones, and conduct random searches to prevent future terrorist attacks?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Military spending/budget/waste",
+        "category_name": "military_spending_budget_waste",
+        "category_number": "10.4",
+        "policies": [
+          "Do you support increasing defense spending?",
+          "Do you support increasing funding for military research and development?",
+          "Do you support increasing pay for troops?"
+        ],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Natural or manmade disasters/extreme weather events in the US",
+    "category_name": "disasters",
+    "category_number": "11",
+    "policies": [],
+    "targets": [],
+    "children": [
+      {
+        "category": "Extreme weather events",
+        "category_name": "extreme_weather_events",
+        "category_number": "11.1",
+        "policies": [
+          "Do you support increasing funding for disaster/emergency relief, e.g., FEMA?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Plane crashes or other manmade disasters",
+        "category_name": "manmade_disasters",
+        "category_number": "11.2",
+        "policies": [],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "International events not involving the US",
+    "category_name": "international",
+    "category_number": "12",
+    "policies": [],
+    "targets": [],
+    "children": [
+      {
+        "category": "Terrorism in countries other than US",
+        "category_name": "terrorism_outside_us",
+        "category_number": "12.1",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Wars not involving the US",
+        "category_name": "wars_outside_us",
+        "category_number": "12.2",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Protests/disturbances in countries other than US",
+        "category_name": "protests_outside_us",
+        "category_number": "12.3",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "Elections in countries other than US",
+        "category_name": "elections_outside_us",
+        "category_number": "12.4",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "International economic policy/economic conditions",
+        "category_name": "international_economic_policy_economic_conditions",
+        "category_number": "12.5",
+        "policies": [
+          "Do you support increasing funding for foreign aid?"
+        ],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "International humanitarian issues",
+        "category_name": "international_humanitarian_issues",
+        "category_number": "12.6",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "International natural disasters",
+        "category_name": "international_natural_disasters",
+        "category_number": "12.7",
+        "policies": [],
+        "targets": [],
+        "children": []
+      },
+      {
+        "category": "International agreements and organizations not involving the US",
+        "category_name": "international_agreements",
+        "category_number": "12.8",
+        "policies": [],
+        "targets": [],
+        "children": [
+          {
+            "category": "Environmental agreements not involving the US",
+            "category_name": "environmental_agreements_outside_us",
+            "category_number": "12.8.1",
+            "policies": [],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "Security agreements not involving the US",
+            "category_name": "security_agreements_outside_us",
+            "category_number": "12.8.2",
+            "policies": [],
+            "targets": [],
+            "children": []
+          },
+          {
+            "category": "International organizations not involving the US",
+            "category_name": "international_organizations",
+            "category_number": "12.8.3",
+            "policies": [],
+            "targets": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Anti-elite/anti-politician/anti-media rhetoric",
+    "category_name": "anti_elite_anti_politician_anti_media_rhetoric",
+    "category_number": "13",
+    "policies": [],
+    "targets": [],
+    "children": [
+      {
+        "category": "Media bias",
+        "category_name": "media_bias",
+        "category_number": "13.1",
+        "policies": [],
+        "targets": [
+          "media outlets"
+        ],
+        "children": []
+      },
+      {
+        "category": "Influence of the wealthy on politics",
+        "category_name": "influence_of_the_wealthy_on_politics",
+        "category_number": "13.2",
+        "policies": [],
+        "targets": [
+          "special interests",
+          "lobbyists"
+        ],
+        "children": []
+      },
+      {
+        "category": "Influence of Hollywood and cultural elites",
+        "category_name": "influence_of_hollywood_and_cultural_elites",
+        "category_number": "13.3",
+        "policies": [],
+        "targets": [],
+        "children": []
+      }
+    ]
+  },
+  {
+    "category": "Entertainment/popular culture/sports",
+    "category_name": "entertainment_popular_culture_sports",
+    "category_number": "14",
+    "policies": [],
+    "targets": [],
+    "children": []
+  },
+  {
+    "category": "Commercial (non-political) advertising",
+    "category_name": "commercial_non_political_advertising",
+    "category_number": "15",
+    "policies": [],
+    "targets": [],
+    "children": []
+  }
+]
