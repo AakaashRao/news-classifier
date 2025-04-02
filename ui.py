@@ -285,6 +285,25 @@ if not st.session_state.initialized:
      st.warning("App not initialized. Please refresh.")
      st.stop()
 
+# Add download button functionality outside the main classification flow
+# Ensure it's always available if the file exists
+output_file_path = st.session_state.output_path
+if output_file_path.exists():
+    try:
+        with open(output_file_path, "r", encoding="utf-8") as fp:
+            file_content = fp.read()
+        st.download_button(
+            label="Download Classifications (.jsonl)",
+            data=file_content,
+            file_name=output_file_path.name,
+            mime="application/jsonl", # Or "text/plain", "application/octet-stream"
+            key="download_classifications_button" # Add a unique key
+        )
+    except Exception as e:
+        st.warning(f"Could not read {output_file_path.name} for download: {e}")
+else:
+    st.info("No classifications saved yet. The download button will appear once you save the first classification.")
+
 if st.session_state.current_index >= st.session_state.total_segments:
     st.success("🎉 All segments have been classified! 🎉")
     st.balloons()
@@ -504,13 +523,23 @@ st.markdown("""
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px; /* Add some space below the main button */
   }
+  /* Ensure download button also takes full width for consistency */
+  div[data-testid="stDownloadButton"] > button {
+      width: 100% !important;
+      min-height: 45px !important;
+      font-size: 16px !important;
+  }
+
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("<div class='button-container'>", unsafe_allow_html=True)
 save_button = st.button("Save and Next", key=f"save_next_button_{current_segment_id}")
 st.markdown("</div>", unsafe_allow_html=True)
+
+# Download button will be rendered earlier based on file existence check
 
 if save_button:
     save_classification(
@@ -520,4 +549,8 @@ if save_button:
         st.session_state.output_path
     )
     st.session_state.current_index += 1
+    # Check if the new index is a multiple of 5
+    if st.session_state.current_index % 5 == 0 and st.session_state.current_index > 0:
+         st.toast(f"5 more classifications saved! You can download the updated '{st.session_state.output_path.name}' file now.", icon="📥")
+
     st.rerun() # Ensure rerun happens cleanly
