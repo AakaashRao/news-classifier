@@ -149,6 +149,7 @@ st.title("Manual News Segment Classification")
 if 'initialized' not in st.session_state:
     st.session_state.initialized = False
     st.session_state.error_occurred = False
+    st.session_state.session_classifications = [] # Initialize list for session classifications
 
 # Attempt initialization only if not already done or if an error occurred previously
 if not st.session_state.initialized or st.session_state.error_occurred:
@@ -285,24 +286,25 @@ if not st.session_state.initialized:
      st.warning("App not initialized. Please refresh.")
      st.stop()
 
-# Add download button functionality outside the main classification flow
-# Ensure it's always available if the file exists
-output_file_path = st.session_state.output_path
-if output_file_path.exists():
+# --- Session Download Button ---
+# Offer download only if classifications have been made in this session
+if st.session_state.session_classifications:
     try:
-        with open(output_file_path, "r", encoding="utf-8") as fp:
-            file_content = fp.read()
+        # Format session classifications as a JSONL string
+        session_jsonl_data = "\n".join(json.dumps(record) for record in st.session_state.session_classifications)
         st.download_button(
-            label="Download Classifications (.jsonl)",
-            data=file_content,
-            file_name=output_file_path.name,
-            mime="application/jsonl", # Or "text/plain", "application/octet-stream"
-            key="download_classifications_button" # Add a unique key
+            label=f"Download Session Classifications ({len(st.session_state.session_classifications)} items)",
+            data=session_jsonl_data,
+            file_name="session-classifications.jsonl", # Changed filename
+            mime="application/jsonl",
+            key="download_session_button" # Changed key
         )
     except Exception as e:
-        st.warning(f"Could not read {output_file_path.name} for download: {e}")
+        st.warning(f"Could not prepare session classifications for download: {e}")
 else:
-    st.info("No classifications saved yet. The download button will appear once you save the first classification.")
+    # Optionally, show a disabled button or just info text
+    st.info("No classifications made in this session yet. The download button will appear after you save the first one.")
+# --- End Session Download Button ---
 
 if st.session_state.current_index >= st.session_state.total_segments:
     st.success("🎉 All segments have been classified! 🎉")
@@ -442,6 +444,36 @@ segment_data = st.session_state.segments_df.iloc[st.session_state.current_index]
 segment_text = segment_data.get('text', 'Text not found')
 
 st.header(f"Segment {st.session_state.current_index + 1} of {st.session_state.total_segments}")
+
+# --- Jump to ID functionality ---
+col1, col2 = st.columns([3, 1]) # Create columns for layout
+with col1:
+    jump_id_input = st.text_input(
+        "Enter Segment ID to jump to:",
+        key="jump_id_input",
+        placeholder="Paste or type segment ID here"
+    )
+with col2:
+    # Add some vertical space to align button better with text input
+    st.markdown("<div style='margin-top: 28px;'></div>", unsafe_allow_html=True)
+    jump_button = st.button("Jump to ID", key="jump_button")
+
+if jump_button:
+    entered_id = jump_id_input.strip()
+    if entered_id:
+        try:
+            # Find the index of the entered ID
+            target_index = st.session_state.all_segment_ids.index(entered_id)
+            st.session_state.current_index = target_index
+            st.rerun() # Rerun to update the display to the new segment
+        except ValueError:
+            st.error(f"Segment ID '{entered_id}' not found.")
+        except Exception as e:
+            st.error(f"An error occurred while trying to jump: {e}")
+    else:
+        st.warning("Please enter a Segment ID to jump.")
+# --- End Jump to ID ---
+
 st.subheader(f"ID: `{current_segment_id}`")
 
 # Display the segment text more prominently with a larger font
@@ -539,8 +571,6 @@ st.markdown("<div class='button-container'>", unsafe_allow_html=True)
 save_button = st.button("Save and Next", key=f"save_next_button_{current_segment_id}")
 st.markdown("</div>", unsafe_allow_html=True)
 
-# Download button will be rendered earlier based on file existence check
-
 if save_button:
     save_classification(
         current_segment_id,
@@ -548,6 +578,14 @@ if save_button:
         st.session_state.cat_to_name_map,
         st.session_state.output_path
     )
+    # Also store the classification in the session state list
+    final_topic_names_for_session = sorted([st.session_state.cat_to_name_map[cat] for cat in selected_final_categories if cat in st.session_state.cat_to_name_map])
+    session_record = {
+        "id": current_segment_id,
+        "final_topics": final_topic_names_for_session
+    }
+    st.session_state.session_classifications.append(session_record)
+
     st.session_state.current_index += 1
     # Check if the new index is a multiple of 5
     if st.session_state.current_index % 5 == 0 and st.session_state.current_index > 0:
